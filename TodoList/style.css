@@ -1,0 +1,219 @@
+ /*Keep the padding and border throughout all elements*/
+* {box-sizing: border-box;}
+
+body {
+    background-image: url("city.jpg");
+    background-size: cover;
+}
+
+/*Remove margins, padding and the dots from the list*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Style list items*/
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: 270px;
+    margin-bottom: 1px;
+    position: relative;
+    padding: 15px 10px 15px 0px;
+    background: lightskyblue;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    padding: 15px 8px 14px 40px;
+
+}
+
+/*Make the odd list items a different color */
+ul li:nth-child(odd) {
+    background: lightgrey;
+}
+
+/*When list item is hovered over, change the color */
+ul li:hover {
+    background: #99c9ff;
+}
+
+/*Add a check mark when list item is clicked on to show finished item*/
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/*When list item is clicked on, cross out text to show finished item*/
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/*Styling close button*/
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 1px;
+    background: lightgray;
+    font-size: 21px;
+    transition: all 0.3s ease;
+}
+
+.openSidebar {
+    position: absolute;
+    right: 60px;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 1px;
+    background: lightgray;
+    font-size: 21px;
+    transition: all 0.3s ease;
+}
+
+.icons { 
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+    background: black;
+    font-size: 21px;
+}
+
+.close:hover {
+    background-color: lightcoral;
+    color:white;
+}
+
+.openSidebar:hover {
+    background-color: lightcoral;
+    color:white;
+}
+
+/*Styling the header*/
+.header {
+    background-color: #f0f0f5;
+    margin: 20px 0px 20px 270px;
+    position: relative;
+    padding: 15px 10px 15px 22px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header:after {
+    content: '';
+    display:table;
+    clear:both;
+}
+
+/*Styling the input*/
+input {
+    font-family: Cambria;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+/*Styling the "add item" button*/
+#addBtn {
+    display: none;
+}
+/*Styling the text input*/
+#textInput {
+    padding: 10px;
+    width: 99%;
+    height: 40px;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    cursor: text;
+    border-radius: 0;
+}       
+
+/*Stying the navigation toolbar*/
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white
+  }
+
+/*Styling the search bar*/
+.sidenav .search-container input{
+    width: 210px;
+    font-family: Cambria;
+    color: white;
+    font-size: 17px;
+    background-size: 22px 22px;
+    background-position: 215px; 
+    background-repeat: no-repeat;
+    background-color: #3E42B7;
+}
+
+.sidenav .search-container button {
+    float: right;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #3E42B7;
+}
+
+.list-name {
+    overflow: hidden;
+    background-color: rgb(74, 86, 248);
+    position: relative;
+    height: 40px;
+}
+
+.list-name a {
+    color: white;
+    float: left;
+    text-align: center;
+    font-style: Cambria;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 280px;
+    padding: 5px 8px 14px 40px;
+}
+
+.completed {
+    margin-left: 270px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#showCompleted {
+    background: rgb(92, 95, 189);
+}

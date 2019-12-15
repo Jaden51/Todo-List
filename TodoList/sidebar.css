@@ -1,0 +1,59 @@
+body {
+    font-family: "Cambria", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: lightgrey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar .closeSidebar {
+    position: absolute;
+    background: lightgrey;
+    border-style: none;
+    bottom: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 182px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 400px;
+}
+
+.closeSidebar:hover {
+    background: rgb(181, 187, 241);
+}
+
+#main {
+      transition: margin-right .5s;
+      padding-right: 20px;
+}
+
+.sidebar h1{
+    color: blue;
+    font-size: 30px;
+}

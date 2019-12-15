@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="list-name">
+            <a>Inbox</a>
+        </div>
+        <div class="sidenav">
+            <div class="search-container">
+                <input type="text" name="search-container">
+                <button type="cancel"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+        <div id="div" class="header">
+            <h1 id="header"></h1>
+            <input type="text" id="textInput" placeholder="Add to-do...">
+            <button class="btn" id="addBtn" onclick="addListItem()">Add Item</button>
+        </div>
+
+        <div>
+            <ul id="list"></ul>
+        </div>
+
+        <div class="completed">
+            <button class="btn" id="showCompleted" onclick="showListItem()">0 completed to-dos</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

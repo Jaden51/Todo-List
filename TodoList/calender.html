@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .navigation {
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+
+        .navigation a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navigation a:hover {
+            background-color: lavender;
+            color: black;
+        }
+
+        .navigation a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .navigation .search-bar input {
+            position: fixed;
+            width: 130px;
+            font-family: Cambria;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 25px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("search.png");
+            background-size: 22px 22px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            background-color: white;
+            padding: 12px 2px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .navigation input:focus {
+            width: 75%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /*Styling the header for the month*/
+        .month {
+            padding: 50px 25px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 70%;
+            margin: 15px 15% 10px 15%;
+            background: rgb(182, 182, 182);
+            text-align: center;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .month ul li {
+            color: black;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /*Styling the previous button*/
+        .month .prev {
+            float: left;
+            padding-top: 10px;
+        }
+
+        /*Styling the next button*/
+        .month .next {
+            float: right;
+            padding-top: 10px;
+        }
+
+        /*Styling the weekdays*/
+        .weekdays {
+            margin: 0px 15% 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            background-color:lightskyblue;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 14%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Styling the days*/
+        .days {
+            margin: 0px 15%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            background-color: rgb(204, 230, 247);
+        }
+
+        .days li {
+            list-style-type: none;
+            padding: 25px;
+            display: inline-block;
+            width: 14%;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: black;
+            cursor: pointer;
+            border: 2px solid grey;
+        }
+        
+        /*Highlight the current day*/
+        .days li .active {
+            padding: 5px;
+            background: rgb(83, 82, 82);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="calender.html">Calender</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="search-bar">
+            <form>
+                <input type="text" name="search">
+            </form>
+        </div>
+    </div>
+
+    <div class="month">
+        <ul>
+            <li class="prev">&#10096</li>
+            <li class="next">&#10097</li>
+            <li>August<br><span style="font-size:22px">2019</span></li>
+        </ul>
+    </div>
+
+    <ul class="weekdays">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thrusday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+    </ul>
+
+    <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+
+    <script src="calender.js"></script>
+
+</body>
+
+</html>
